@@ -1,0 +1,115 @@
+.about-me {
+  padding: 2rem 4rem;
+  background-color: #fff;
+  margin-bottom: 5rem;
+  transition: all 1s;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas:
+    "heading heading"
+    "row1 row1"
+    "row2 row2"
+    "row3 row3";
+  row-gap: 4rem;
+
+  &__heading {
+    grid-area: heading;
+    justify-self: center;
+    align-self: center;
+
+    padding: 1rem;
+
+    @include headingGradient;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @media only screen and (max-width: $bp-smaller) {
+      flex-direction: column;
+    }
+
+    &--1 {
+      grid-area: row1;
+      padding-left: 2rem;
+
+      @media only screen and (max-width: $bp-smaller) {
+        padding: 0;
+        text-align: center;
+
+        & img {
+          order: -1;
+        }
+      }
+    }
+
+    &--2 {
+      grid-area: row2;
+      padding-right: 2rem;
+
+      @media only screen and (max-width: $bp-smaller) {
+        padding: 0;
+        text-align: center;
+      }
+    }
+
+    &--3 {
+      grid-area: row3;
+      padding-left: 2rem;
+
+      @media only screen and (max-width: $bp-smaller) {
+        padding: 0;
+        text-align: center;
+
+        & img {
+          order: -1;
+        }
+      }
+    }
+  }
+
+  &__intro {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: $color-grey;
+    color: #555;
+    padding: 4rem 1.5rem;
+    border-radius: 50px;
+    outline: 2px solid $color-orange;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
+    @media only screen and (max-width: $bp-large-1) {
+      font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 2rem;
+    }
+  }
+
+  &__img {
+    height: 60rem;
+    width: auto;
+    display: block;
+
+    @media only screen and (max-width: $bp-large-1) {
+      height: 50rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 40rem;
+    }
+  }
+}

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Jakob Ibrahim &mdash; Portfolio</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body class="container">
+    <!-- HEADER / NAVIGATION -->
+    <header class="header" id="home">
+      <nav class="header__navigation">
+        <a href="mailto:JaIbrahim@outlook.de" class="header__name"
+          >JaIbrahim@outlook.de</a
+        >
+
+        <ul class="header__nav">
+          <li class="header__item">
+            <a href="#home" class="header__link">Home</a>
+          </li>
+          <li class="header__item">
+            <a href="#projects" class="header__link">Projects</a>
+          </li>
+          <li class="header__item">
+            <a href="#about-me" class="header__link">About me</a>
+          </li>
+        </ul>
+
+        <a href="#footer" class="header__button--1">Contact me</a>
+
+        <button class="header__button-mobile-nav">
+          <span class="header__mobile-nav-icon"></span>
+        </button>
+      </nav>
+
+      <section class="header__section">
+        <div class="header__section--left">
+          <div class="header__title">
+            <div class="header__title-box">
+              <h1 class="header__title--h1">
+                Hi I'm <span class="header__title-name--1">J</span
+                ><span class="header__title-name--2">a</span
+                ><span class="header__title-name--3">k</span
+                ><span class="header__title-name--4">o</span
+                ><span class="header__title-name--5">b</span>
+                <span class="header__title-name--6">I</span
+                ><span class="header__title-name--7">b</span
+                ><span class="header__title-name--8">r</span
+                ><span class="header__title-name--9">a</span
+                ><span class="header__title-name--10">h</span
+                ><span class="header__title-name--11">i</span
+                ><span class="header__title-name--12">m</span>, a Software
+                Developer
+              </h1>
+              <h3 class="header__title--h3">
+                A self-taught Programmer, who wants to continue learning even
+                more!
+              </h3>
+              <span class="header__orb"></span>
+            </div>
+            <a href="#projects" class="header__button--2">See projects</a>
+          </div>
+
+          <div class="header__icon-wrapper">
+            <div class="header__icons">
+              <a href="https://github.com/Jakiba">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="header__icon"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="https://www.linkedin.com/in/jakob-ibrahim-42746924b/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="header__icon"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+
+            <div class="header__languages">
+              <span class="header__icon--js">
+                <ion-icon class="icon" name="logo-javascript"></ion-icon>
+              </span>
+
+              <span class="header__icon--html">
+                <ion-icon class="icon" name="logo-html5"></ion-icon>
+              </span>
+
+              <span class="header__icon--css">
+                <ion-icon class="icon" name="logo-css3"></ion-icon>
+              </span>
+
+              <span class="header__icon--npm">
+                <ion-icon class="icon" name="logo-npm"></ion-icon>
+              </span>
+
+              <span class="header__icon--git">
+                <ion-icon class="icon" name="git-branch-outline"></ion-icon>
+              </span>
+
+              <span class="header__icon--sass">
+                <ion-icon class="icon" name="logo-sass"></ion-icon>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="header__section--right">
+        <img
+          src="PNG/header-img.svg"
+          alt="picture of me"
+          class="header__section-img"
+        />
+      </div>
+
+      <a href="#home" class="header__to-the-top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="header__to-the-top--icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="3"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5 10l7-7m0 0l7 7m-7-7v18"
+          />
+        </svg>
+      </a>
+    </header>
+
+    <main class="main">
+      <!-- PROJECTS -->
+      <section class="projects section" id="projects">
+        <h2 class="projects__heading">My Projects</h2>
+
+        <!-- CARD 1 -->
+        <div class="projects__card projects__card--1">
+          <div class="projects__side projects__side--front">
+            <figure>
+              <img
+                src="img/EldenFact.png"
+                alt="EldenFact Project"
+                class="projects__img"
+              />
+            </figure>
+          </div>
+          <div class="projects__side projects__side--back">
+            <h2 class="projects__title">EldenFact</h2>
+            <p class="projects__description">
+              An all encompassing Elden Ring wiki for everything you might be
+              searching for. Search for the items you like and save them for
+              later!
+            </p>
+            <ul class="projects__tools-used">
+              <li class="header__icon--html">
+                <ion-icon class="icon" name="logo-html5"></ion-icon>
+              </li>
+              <li class="header__icon--css">
+                <ion-icon class="icon" name="logo-css3"></ion-icon>
+              </li>
+              <li class="header__icon--js">
+                <ion-icon class="icon" name="logo-javascript"></ion-icon>
+              </li>
+              <li class="header__icon--npm">
+                <ion-icon class="icon" name="logo-npm"></ion-icon>
+              </li>
+              <li class="header__icon--git">
+                <ion-icon class="icon" name="git-branch-outline"></ion-icon>
+              </li>
+            </ul>
+            <div class="projects__links">
+              <a
+                href="https://eldenfact.netlify.app/"
+                class="projects__link projects__link--1"
+                >Webpage</a
+              >
+              <a
+                href="https://github.com/Jakiba/EldenFact"
+                class="projects__link projects__link--2"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="projects__card projects__card--2">
+          <div class="projects__side projects__side--front">
+            <figure>
+              <img
+                src="img/Natours.png"
+                alt="Natours Project"
+                class="projects__img"
+              />
+            </figure>
+          </div>
+          <div class="projects__side projects__side--back">
+            <h2 class="projects__title">Natours</h2>
+            <p class="projects__description">
+              Enough of the desk and work. Its time to feel and breath nature
+              again. Exciting tours for adventurous people await you on Natours.
+              Visit places you never saw before!
+            </p>
+            <ul class="projects__tools-used">
+              <li class="header__icon--html">
+                <ion-icon class="icon" name="logo-html5"></ion-icon>
+              </li>
+              <li class="header__icon--css">
+                <ion-icon class="icon" name="logo-css3"></ion-icon>
+              </li>
+              <li class="header__icon--sass">
+                <ion-icon class="icon" name="logo-sass"></ion-icon>
+              </li>
+              <li class="header__icon--npm">
+                <ion-icon class="icon" name="logo-npm"></ion-icon>
+              </li>
+              <li class="header__icon--git">
+                <ion-icon class="icon" name="git-branch-outline"></ion-icon>
+              </li>
+            </ul>
+            <div class="projects__links">
+              <a
+                href="https://natour-s.netlify.app/"
+                class="projects__link projects__link--1"
+                >Webpage</a
+              >
+              <a
+                href="https://github.com/Jakiba/Natours"
+                class="projects__link projects__link--2"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="projects__card projects__card--3">
+          <div class="projects__side projects__side--front">
+            <figure>
+              <img
+                src="img/Forkify.png"
+                alt="Forkify Project"
+                class="projects__img"
+              />
+            </figure>
+          </div>
+          <div class="projects__side projects__side--back">
+            <h2 class="projects__title">Forkify</h2>
+            <p class="projects__description">
+              No more fast food from now on! Cooking is not hard with the right
+              tutorials and its even easier if you can just search for any
+              recipe on one page and find everything you need!
+            </p>
+            <ul class="projects__tools-used">
+              <li class="header__icon--html">
+                <ion-icon class="icon" name="logo-html5"></ion-icon>
+              </li>
+              <li class="header__icon--css">
+                <ion-icon class="icon" name="logo-css3"></ion-icon>
+              </li>
+              <li class="header__icon--js">
+                <ion-icon class="icon" name="logo-javascript"></ion-icon>
+              </li>
+              <li class="header__icon--npm">
+                <ion-icon class="icon" name="logo-npm"></ion-icon>
+              </li>
+              <li class="header__icon--git">
+                <ion-icon class="icon" name="git-branch-outline"></ion-icon>
+              </li>
+            </ul>
+            <div class="projects__links">
+              <a
+                href="https://forkify-jakob.netlify.app/"
+                class="projects__link projects__link--1"
+                >Webpage</a
+              >
+              <a
+                href="https://github.com/Jakiba/forkify"
+                class="projects__link projects__link--2"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="projects__card projects__card--4">
+          <div class="projects__side projects__side--front">
+            <figure>
+              <img
+                src="img/nexter.png"
+                alt="nexter Project"
+                class="projects__img"
+              />
+            </figure>
+          </div>
+          <div class="projects__side projects__side--back">
+            <h2 class="projects__title">Nexter</h2>
+            <p class="projects__description">
+              Experience for the first time in your life absolute personal
+              freedom with your own home. A home perfectly tailored to your
+              wishes.
+            </p>
+            <ul class="projects__tools-used">
+              <li class="header__icon--html">
+                <ion-icon class="icon" name="logo-html5"></ion-icon>
+              </li>
+              <li class="header__icon--css">
+                <ion-icon class="icon" name="logo-css3"></ion-icon>
+              </li>
+              <li class="header__icon--sass">
+                <ion-icon class="icon" name="logo-sass"></ion-icon>
+              </li>
+              <li class="header__icon--npm">
+                <ion-icon class="icon" name="logo-npm"></ion-icon>
+              </li>
+              <li class="header__icon--git">
+                <ion-icon class="icon" name="git-branch-outline"></ion-icon>
+              </li>
+            </ul>
+            <div class="projects__links">
+              <a
+                href="https://nexte-r.netlify.app/"
+                class="projects__link projects__link--1"
+                >Webpage</a
+              >
+              <a
+                href="https://github.com/Jakiba/nexter"
+                class="projects__link projects__link--2"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="projects__card projects__card--5">
+          <div class="projects__side projects__side--front">
+            <figure>
+              <img
+                src="img/webNowadays.png"
+                alt="webNowadays Project"
+                class="projects__img"
+              />
+            </figure>
+          </div>
+          <div class="projects__side projects__side--back">
+            <h2 class="projects__title">webNowadays</h2>
+            <p class="projects__description">
+              A satirical take on the websites from today. No i dont want to
+              subscribe, No i dont want to get messages, NO i dont want to be
+              notified. Just let me browse the website!!!
+            </p>
+            <ul class="projects__tools-used">
+              <li class="header__icon--html">
+                <ion-icon class="icon" name="logo-html5"></ion-icon>
+              </li>
+              <li class="header__icon--css">
+                <ion-icon class="icon" name="logo-css3"></ion-icon>
+              </li>
+              <li class="header__icon--js">
+                <ion-icon class="icon" name="logo-javascript"></ion-icon>
+              </li>
+              <li class="header__icon--npm">
+                <ion-icon class="icon" name="logo-npm"></ion-icon>
+              </li>
+              <li class="header__icon--git">
+                <ion-icon class="icon" name="git-branch-outline"></ion-icon>
+              </li>
+            </ul>
+            <div class="projects__links">
+              <a
+                href="https://web-nowaday.netlify.app/"
+                class="projects__link projects__link--1"
+                >Webpage</a
+              >
+              <a
+                href="https://github.com/Jakiba/webNowadays"
+                class="projects__link projects__link--2"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="projects__card projects__card--6">
+          <div class="projects__side projects__side--front">
+            <figure>
+              <img
+                src="img/Trillo.png"
+                alt="Trillo Project"
+                class="projects__img"
+              />
+            </figure>
+          </div>
+          <div class="projects__side projects__side--back">
+            <h2 class="projects__title">Trillo</h2>
+            <p class="projects__description">
+              You just work everyday and need a break from all the stress? Then
+              you have found the perfect place with Trillo. Search for the best
+              hotels and start your holidays!
+            </p>
+            <ul class="projects__tools-used">
+              <li class="header__icon--html">
+                <ion-icon class="icon" name="logo-html5"></ion-icon>
+              </li>
+              <li class="header__icon--css">
+                <ion-icon class="icon" name="logo-css3"></ion-icon>
+              </li>
+              <li class="header__icon--sass">
+                <ion-icon class="icon" name="logo-sass"></ion-icon>
+              </li>
+              <li class="header__icon--npm">
+                <ion-icon class="icon" name="logo-npm"></ion-icon>
+              </li>
+              <li class="header__icon--git">
+                <ion-icon class="icon" name="git-branch-outline"></ion-icon>
+              </li>
+            </ul>
+            <div class="projects__links">
+              <a
+                href="https://trill-o.netlify.app/"
+                class="projects__link projects__link--1"
+                >Webpage</a
+              >
+              <a
+                href="https://github.com/Jakiba/Trillo"
+                class="projects__link projects__link--2"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT-ME SECTION -->
+      <section class="about-me section" id="about-me">
+        <h2 class="about-me__heading">About me</h2>
+        <div class="about-me__row about-me__row--1">
+          <p class="about-me__intro about-me__intro--1">
+            Let me introduce myself again. Im Jakob Ibrahim. Im 20 years old and
+            currently visiting the "Universität Koblenz", where im working on my
+            B.Sc. in computer science. But why did I specifically chose computer
+            science? Or in other words, when did i realise my love for software
+            development and chose to walk the path of a software devoloper? Let
+            me explain.
+          </p>
+          <img
+            src="PNG/Chubbs DrawKit_Vector_Illustrations-02.png"
+            alt="illustration saying hello"
+            class="about-me__img"
+          />
+        </div>
+
+        <div class="about-me__row about-me__row--2">
+          <img
+            src="PNG/Chubbs DrawKit_Vector_Illustrations-07.png"
+            alt="illustration saying hello"
+            class="about-me__img"
+          />
+          <p class="about-me__intro about-me__intro--2">
+            Chasing a career as a software developer was at the beginning not
+            even something i considered. I wanted to study mathematics at first.
+            My school didnt even have a real computer science class. I didnt
+            knew a single thing about programming languages, npm packages or
+            anything else.
+          </p>
+        </div>
+
+        <div class="about-me__row about-me__row--3">
+          <p class="about-me__intro about-me__intro--3">
+            This all started through sheer luck. I found a video on youtube and
+            just tried it out... and fell in love with it. I started coding
+            everyday for several hours. At some point i learned about JavaScript
+            and that i can make my pages interactive. After that my career path
+            was settled... I wanted, no... HAD to become a software developer.
+            So I continued to learn even more, be it about npm, sass (scss) or
+            git.
+          </p>
+          <img
+            src="PNG/Chubbs DrawKit_Vector_Illustrations-06.png"
+            alt="illustration saying hello"
+            class="about-me__img"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER / CONTACT -->
+    <footer class="footer section" id="footer">
+      <h2 class="footer__heading">Get in touch</h2>
+      <img
+        src="PNG/Chubbs DrawKit_Vector_Illustrations-08.png"
+        alt="illustration saying hello"
+        class="about-me__img footer__img--1"
+      />
+
+      <div class="footer__col-2">
+        <div class="footer__wrapper">
+          <p class="footer__contact">
+            Contact me under
+            <a href="mailto:JaIbrahim@outlook.de" class="footer__data"
+              >JaIbrahim@outlook.de</a
+            >
+          </p>
+          <div class="footer__icon-wrapper header__icon-wrapper">
+            <div class="header__icons">
+              <a href="https://github.com/Jakiba">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="header__icon"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
+
+              <a href="https://www.linkedin.com/in/jakob-ibrahim-42746924b/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="header__icon"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copyright">
+        Copyright &copy; <span class="year">2022</span> by
+        <span class="footer__data">Jakob Ibrahim</span>. All rights reserved.
+      </p>
+      <img
+        src="PNG/Chubbs DrawKit_Vector_Illustrations-05.png"
+        alt="illustration saying hello"
+        class="about-me__img footer__img--2"
+      />
+    </footer>
+
+    <!-- SCRIPT - IONICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

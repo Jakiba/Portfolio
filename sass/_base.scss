@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: $bp-larger) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 45%;
+  }
+
+  &::-webkit-scrollbar {
+    overflow: scroll;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f8edec;
+    margin-block: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, $color-yellow, $color-orange);
+    border-radius: 10px;
+  }
+
+  @supports (scrollbar-color: $color-orange #f8edec) {
+    scrollbar-color: $color-orange #f8edec;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+
+  background-color: #f8edec;
+  padding: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 0;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0;
+  }
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}

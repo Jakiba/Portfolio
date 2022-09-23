@@ -1,0 +1,30 @@
+//COLORS
+$color-grey: #333;
+$color-grey-light: #777;
+
+$color-blue-1: #063f93;
+$color-blue-2: #0049ff;
+
+$color-orange: #ff6833;
+$color-yellow: #feaf2f;
+
+//BREAKPOINTS
+$bp-ultra: 112.5em; //1880px
+$bp-largest: 87.5em; //1400px
+$bp-larger: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-large-1: 62.5em; //1000px
+$bp-medium: 56.25em; //900px
+$bp-medium: 56.25em; //900px
+$bp-small: 50em; //800px
+$bp-smaller: 37.5em; //600px
+$bp-smallest: 25em; //400px
+
+//MIXINS
+@mixin headingGradient {
+  font-size: 5rem;
+  background-image: linear-gradient(to right, $color-yellow, $color-orange);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

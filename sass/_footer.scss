@@ -1,0 +1,106 @@
+.footer {
+  background-color: #fff;
+  padding-bottom: 2rem;
+  transition: all 1s;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "head head head"
+    "img-1 form img-2"
+    "copy copy copy";
+  justify-items: center;
+
+  &__col-2 {
+    grid-area: form;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    grid-area: head;
+
+    padding-top: 2rem;
+    text-align: center;
+
+    @include headingGradient;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+
+    @media only screen and (max-width: $bp-smaller) {
+      gap: 2rem;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    color: $color-grey;
+    font-weight: 700;
+
+    @media only screen and (max-width: $bp-smaller) {
+      font-size: 2rem;
+    }
+  }
+
+  &__data {
+    background-image: linear-gradient(to right, $color-yellow, $color-orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.2s;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__copyright {
+    grid-area: copy;
+
+    font-size: 1.5rem;
+    color: $color-grey;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__img {
+    &--1 {
+      grid-area: img-1;
+      display: block;
+      height: 100%;
+      width: 100%;
+
+      @media only screen and (max-width: $bp-smaller) {
+        display: none;
+      }
+    }
+
+    &--2 {
+      grid-area: img-2;
+      height: 100%;
+      width: 100%;
+
+      @media only screen and (max-width: $bp-smaller) {
+        display: none;
+      }
+    }
+  }
+}
